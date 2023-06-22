@@ -25,6 +25,11 @@ const questions = [
         type: "input"
     },
     {
+        message: "What is left todo?",
+        name: "todo",
+        type: "input"
+    },
+    {
         message: "GitHub username?",
         name: "github",
         type: "input"
@@ -54,6 +59,9 @@ ${answers.installation}
 
 ## Contributions
 ${answers.contributions}
+
+## To Do
+${answers.todo}
 
 ## GitHub
 ${answers.github}
