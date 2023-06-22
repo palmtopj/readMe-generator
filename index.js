@@ -54,6 +54,15 @@ function init() {
 ## Description
 ${answers.description}
 
+Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Contributions](#contributions)
+- [To Do](#to-do)
+- [GitHub](#github)
+- [Email](#email)
+
+
 ## Installation
 ${answers.installation}
 
