@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-// TODO: Create an array of questions for user input
+// array of questions for user input
 const questions = [
     {
         message: "What is the title of your project?",
@@ -36,10 +36,10 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
+// Create a function to write README file
 function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then((answers) => {
@@ -47,13 +47,25 @@ function init() {
         const template = `# ${answers.title}
         
 ## Description
-${answers.description}`
+${answers.description}
+
+## Installation
+${answers.installation}
+
+## Contributions
+${answers.contributions}
+
+## GitHub
+${answers.github}
+
+## Email
+${answers.email}`;
 
         fs.writeFile('TEST.md', template, (err) => {
             if (err) throw err;
             console.log('The file has been saved!');
-        })
-    })
+        });
+    });
 }
 
 // Function call to initialize app
