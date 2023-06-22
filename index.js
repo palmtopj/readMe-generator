@@ -14,6 +14,26 @@ const questions = [
         name: "description",
         type: "input"
     },
+    {
+        message: "What are the installation instructions?",
+        name: "installation",
+        type: "input"
+    },
+    {
+        message: "What are the contributions?",
+        name: "contributions",
+        type: "input"
+    },
+    {
+        message: "GitHub username?",
+        name: "github",
+        type: "input"
+    },
+    {
+        message: "Email?",
+        name: "email",
+        type: "input"
+    },
 ];
 
 // TODO: Create a function to write README file
